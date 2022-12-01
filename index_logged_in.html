@@ -26,8 +26,6 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
-
-
   <!-- Carousel -->
 
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -38,7 +36,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  
   <!-- =======================================================
   * Template Name: NiceAdmin - v2.4.1
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -49,15 +47,15 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
+      <a href="index_logged_in.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
         <img src="assets/img/logo.png" alt="">
         <img src="assets/img/fmj.png">
       </a>
     </div><!-- End Logo -->
+    <!-- End Logo -->
 
     <div class="search-bar">
       <form
@@ -70,9 +68,9 @@
           name="query"
           placeholder="Search"
           title="Enter search keyword"
-          onsearch="window.location.href='searchresults_not_logged_in.html';" method="POST" action="./searchresults_not_logged_in.html"
+          onsearch="window.location.href='searchresults.html';" method="POST" action="./searchresults.html"
         />
-        <button type="button" title="Search" onclick="window.location.href='searchresults_not_logged_in.html';" >
+        <button type="button" title="Search" onclick="window.location.href='searchresults.html';" >
           <i class="bi bi-search"></i>
         </button>
       </form>
@@ -81,21 +79,161 @@
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
         <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
+          <a class="nav-link nav-icon search-bar-toggle" href="#">
             <i class="bi bi-search"></i>
           </a>
-        </li><!-- End Search Icon-->
-        
-        <li class="nav-item">
-          <button type="button" class="btn btn-primary nav-item" onclick="window.location.href='pages-login.html';">Log In</button>
-        </li><!--End Login button icon-->
+        </li>
+        <!-- End Search Icon-->
 
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span> </a
+          ><!-- End Notification Icon -->
+
+          <ul
+            class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+          >
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"
+                ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                  >View all</span
+                ></a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+          </ul>
+          <!-- End Notification Dropdown Items -->
+        </li>
+        <!-- End Notification Nav -->
+
+        <li class="nav-item dropdown pe-3">
+          <a
+            class="nav-link nav-profile d-flex align-items-center pe-0"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <img
+              src="assets/img/rocker_profile.jfif"
+              alt="Profile"
+              class="rounded-circle"
+            />
+            <span class="d-none d-md-block dropdown-toggle ps-2"
+              >K. Anderson</span
+            > </a
+          ><!-- End Profile Iamge Icon -->
+
+          <ul
+            class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+          >
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Full Time Rocker</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="users-profile.html"
+              >
+                <i class="bi bi-person"></i>
+                <span>My Account</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li>
+              <a
+                class="dropdown-item d-flex align-items-center"
+                href="pages-faq.html"
+              >
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="index.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+          </ul>
+          <!-- End Profile Dropdown Items -->
+        </li>
+        <!-- End Profile Nav -->
       </ul>
-    </nav><!-- End Icons Navigation -->
-
-  </header><!-- End Header -->
+    </nav>
+    <!-- End Icons Navigation -->
+  </header>
+  <!-- End Header -->
 
   <main id="main" class="main mx-auto">
 
@@ -117,7 +255,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-6">
-                      <h3 class="mb-3">Recommended</h3>
+                      <h3 class="mb-3">Recommended for you</h3>
                     </div>
                     <div class="col-6 text-right">
                       <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -225,7 +363,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div>
-      <p><a href="pages-faq-not_logged_in.html">About</a></p>
+      <p><a href="pages-faq.html">About</a></p>
 
     </div>
   </footer><!-- End Footer -->
@@ -246,4 +384,5 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

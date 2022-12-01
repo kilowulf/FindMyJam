@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Users / Profile - FindMyJam</title>
+    <title>Users / Account - FindMyJam</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -49,7 +49,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
+        <a href="index_logged_in.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
           <img src="assets/img/logo.png" alt="">
           <img src="assets/img/fmj.png">
         </a>
@@ -69,7 +69,7 @@
             title="Enter search keyword"
             onsearch="window.location.href='searchresults.html';" method="POST" action="./searchresults.html"
           />
-          <button type="submit" title="Search" onclick="window.location.href='searchresults.html';" >
+          <button type="button" title="Search" onclick="window.location.href='searchresults.html';" >
             <i class="bi bi-search"></i>
           </button>
         </form>
@@ -165,98 +165,6 @@
           </li>
           <!-- End Notification Nav -->
 
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-              <i class="bi bi-chat-left-text"></i>
-              <span class="badge bg-success badge-number">3</span> </a
-            ><!-- End Messages Icon -->
-
-            <ul
-              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
-            >
-              <li class="dropdown-header">
-                You have 3 new messages
-                <a href="#"
-                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
-                    >View all</span
-                  ></a
-                >
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="message-item">
-                <a href="#">
-                  <img
-                    src="assets/img/messages-1.jpg"
-                    alt=""
-                    class="rounded-circle"
-                  />
-                  <div>
-                    <h4>Maria Hudson</h4>
-                    <p>
-                      Velit asperiores et ducimus soluta repudiandae labore
-                      officia est ut...
-                    </p>
-                    <p>4 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="message-item">
-                <a href="#">
-                  <img
-                    src="assets/img/messages-2.jpg"
-                    alt=""
-                    class="rounded-circle"
-                  />
-                  <div>
-                    <h4>Anna Nelson</h4>
-                    <p>
-                      Velit asperiores et ducimus soluta repudiandae labore
-                      officia est ut...
-                    </p>
-                    <p>6 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="message-item">
-                <a href="#">
-                  <img
-                    src="assets/img/messages-3.jpg"
-                    alt=""
-                    class="rounded-circle"
-                  />
-                  <div>
-                    <h4>David Muldon</h4>
-                    <p>
-                      Velit asperiores et ducimus soluta repudiandae labore
-                      officia est ut...
-                    </p>
-                    <p>8 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="dropdown-footer">
-                <a href="#">Show all messages</a>
-              </li>
-            </ul>
-            <!-- End Messages Dropdown Items -->
-          </li>
-          <!-- End Messages Nav -->
-
           <li class="nav-item dropdown pe-3">
             <a
               class="nav-link nav-profile d-flex align-items-center pe-0"
@@ -290,20 +198,7 @@
                   href="users-profile.html"
                 >
                   <i class="bi bi-person"></i>
-                  <span>My Profile</span>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li>
-                <a
-                  class="dropdown-item d-flex align-items-center"
-                  href="users-profile.html"
-                >
-                  <i class="bi bi-gear"></i>
-                  <span>Account Settings</span>
+                  <span>My Account</span>
                 </a>
               </li>
               <li>
@@ -342,12 +237,12 @@
 
     <main id="main" class="main mx-auto">
       <div class="pagetitle">
-        <h1>Profile</h1>
+        <h1>Account</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index_logged_in.html">Home</a></li>
             <li class="breadcrumb-item">Users</li>
-            <li class="breadcrumb-item active">Profile</li>
+            <li class="breadcrumb-item active">Account</li>
           </ol>
         </nav>
       </div>
@@ -395,7 +290,27 @@
                       data-bs-toggle="tab"
                       data-bs-target="#profile-overview"
                     >
-                      Overview
+                      Profile
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-favorite-concerts"
+                    >
+                      My Favorited Concerts
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-concert-listings"
+                    >
+                      My Concert Listings
                     </button>
                   </li>
 
@@ -419,15 +334,16 @@
                     </button>
                   </li>
 
-                  <li class="nav-item">
-                    <button
-                      class="nav-link"
-                      data-bs-toggle="tab"
-                      data-bs-target="#profile-change-password"
-                    >
-                      Change Password
-                    </button>
-                  </li>
+
+
+
+
+
+
+
+
+
+
                 </ul>
                 <div class="tab-content pt-2">
                   <div
@@ -436,10 +352,7 @@
                   >
                     <h5 class="card-title">About</h5>
                     <p class="small fst-italic">
-                      Sunt est soluta temporibus accusantium neque nam maiores
-                      cumque temporibus. Tempora libero non est unde veniam est
-                      qui dolor. Ut sunt iure rerum quae quisquam autem eveniet
-                      perspiciatis odit. Fuga sequi sed ea saepe at unde.
+                      I'm a full-time rocker based in Salt Lake City, UT!
                     </p>
 
                     <h5 class="card-title">Profile Details</h5>
@@ -469,19 +382,19 @@
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Address</div>
+                      <div class="col-lg-3 col-md-4 label">Address (private)</div>
                       <div class="col-lg-9 col-md-8">
                         A108 Adam Street, New York, NY 535022
                       </div>
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Phone</div>
+                      <div class="col-lg-3 col-md-4 label">Phone (private)</div>
                       <div class="col-lg-9 col-md-8">(436) 486-3538 x29071</div>
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Email</div>
+                      <div class="col-lg-3 col-md-4 label">Email (private)</div>
                       <div class="col-lg-9 col-md-8">
                         k.anderson@example.com
                       </div>
@@ -551,9 +464,8 @@
                             class="form-control"
                             id="about"
                             style="height: 100px"
-                          >
-Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</textarea
-                          >
+                          >I'm a full-time rocker based in Salt Lake City, UT!
+                          </textarea>
                         </div>
                       </div>
 
@@ -659,74 +571,6 @@ Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Temp
                         </div>
                       </div>
 
-                      <div class="row mb-3">
-                        <label
-                          for="Twitter"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >Twitter Profile</label
-                        >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="twitter"
-                            type="text"
-                            class="form-control"
-                            id="Twitter"
-                            value="https://twitter.com/#"
-                          />
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label
-                          for="Facebook"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >Facebook Profile</label
-                        >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="facebook"
-                            type="text"
-                            class="form-control"
-                            id="Facebook"
-                            value="https://facebook.com/#"
-                          />
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label
-                          for="Instagram"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >Instagram Profile</label
-                        >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="instagram"
-                            type="text"
-                            class="form-control"
-                            id="Instagram"
-                            value="https://instagram.com/#"
-                          />
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label
-                          for="Linkedin"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >Linkedin Profile</label
-                        >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="linkedin"
-                            type="text"
-                            class="form-control"
-                            id="Linkedin"
-                            value="https://linkedin.com/#"
-                          />
-                        </div>
-                      </div>
-
                       <div class="text-center">
                         <button type="submit" class="btn btn-primary">
                           Save Changes
@@ -796,74 +640,203 @@ Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Temp
                         </div>
                       </div>
 
+                      <div class="row mb-3">
+                        <label
+                          for="fullName"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Text Message Notifications</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="changesMade"
+                              checked
+                            />
+                            <label class="form-check-label" for="changesMade">
+                              Changes made to your account
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="newProducts"
+                              checked
+                            />
+                            <label class="form-check-label" for="newProducts">
+                              Information on Concert Events
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="proOffers"
+                            />
+                            <label class="form-check-label" for="proOffers">
+                              Promotionals & Event Updates
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="securityNotify"
+                              checked
+                              disabled
+                            />
+                            <label
+                              class="form-check-label"
+                              for="securityNotify"
+                            >
+                              Security alerts
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="text-center">
                         <button type="submit" class="btn btn-primary">
                           Save Changes
                         </button>
                       </div>
                     </form>
-                    <!-- End settings Form -->
-                  </div>
 
-                  <div class="tab-pane fade pt-3" id="profile-change-password">
-                    <!-- Change Password Form -->
                     <form>
                       <div class="row mb-3">
                         <label
-                          for="currentPassword"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >Current Password</label
+                        for="currentPassword"
+                        class="col-md-4 col-lg-3 col-form-label"
                         >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="password"
-                            type="password"
-                            class="form-control"
-                            id="currentPassword"
-                          />
-                        </div>
-                      </div>
+                        Change Password
 
-                      <div class="row mb-3">
-                        <label
-                          for="newPassword"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >New Password</label
-                        >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="newpassword"
-                            type="password"
-                            class="form-control"
-                            id="newPassword"
-                          />
+                        </label>
+                        <div class="row mb-3">
+                          
+                          <label
+                            for="currentPassword"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Current Password</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="password"
+                              type="password"
+                              class="form-control"
+                              id="currentPassword"
+                            />
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="row mb-3">
-                        <label
-                          for="renewPassword"
-                          class="col-md-4 col-lg-3 col-form-label"
-                          >Re-enter New Password</label
-                        >
-                        <div class="col-md-8 col-lg-9">
-                          <input
-                            name="renewpassword"
-                            type="password"
-                            class="form-control"
-                            id="renewPassword"
-                          />
+                        <div class="row mb-3">
+                          <label
+                            for="newPassword"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >New Password</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="newpassword"
+                              type="password"
+                              class="form-control"
+                              id="newPassword"
+                            />
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="text-center">
-                        <button type="submit" class="btn btn-primary">
-                          Change Password
-                        </button>
+                        <div class="row mb-3">
+                          <label
+                            for="renewPassword"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Re-enter New Password</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="renewpassword"
+                              type="password"
+                              class="form-control"
+                              id="renewPassword"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary">
+                            Change Password
+                          </button>
+                        </div>
                       </div>
                     </form>
-                    <!-- End Change Password Form -->
+                    <!-- End settings Form -->
+                  </div>             
+
+                  <div class="tab-pane fade pt-3" id="profile-favorite-concerts">
+                    <!-- Favorited Concerts display -->
+                    <table class="table" id="listview">
+                      <thead>
+                        <tr>
+                          <th scope="col">Artist Name</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                          <td><a href="concertinfo.html">Megadeth</a></td>
+                          <td>Los Angeles, Ca.</td>
+                          <td>$98.90</td>
+                          <td>2023-12-05</td>
+                        </tr>
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                          <td><a href="concertinfo.html">NOFX</a></td>
+                          <td>Cottonwood, NJ.</td>
+                          <td>$103.89</td>
+                          <td>2023-08-12</td>
+                        </tr>
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                          <td><a href="concertinfo.html">Slayer</a></td>
+                          <td>Provo, Ut.</td>
+                          <td>$79.32</td>
+                          <td>2023-06-11</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- End Favorited Concerts display -->
                   </div>
+
+                                    
+                  <div class="tab-pane fade pt-3" id="profile-concert-listings">
+                    <!-- My Concert Listings display -->
+                    <table class="table" id="listview">
+                      <thead>
+                        <tr>
+                          <th scope="col">Artist Name</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                          <td><a href="concertinfo.html">Kevin Anderson</a></td>
+                          <td>Salt Lake City, Ut.</td>
+                          <td>$49.99</td>
+                          <td>2023-01-21</td>
+                        </tr>
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                          <td><a href="concertinfo.html">Kevin Anderson</a></td>
+                          <td>Provo, Ut.</td>
+                          <td>$49.99</td>
+                          <td>2023-01-28</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- End Concert Listings display -->
+                  </div>
+
                 </div>
                 <!-- End Bordered Tabs -->
               </div>

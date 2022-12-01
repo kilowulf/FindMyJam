@@ -626,6 +626,17 @@ h6 {
   background-color: #000000;
 }
 
+.btn-primary:hover {
+  background-color: #ADD8E6;
+  color: #000000;
+}
+
+.btn-primary:active {
+  background-color: #ADD8E6;
+  color: #000000;
+}
+
+
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
