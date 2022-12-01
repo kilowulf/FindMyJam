@@ -14,7 +14,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
+  background: #d6ebf2;
   color: #444444;
 }
 
@@ -54,7 +54,7 @@ h6 {
 
 /* homepage search bar */
 .home-search {
-  margin-top: 200px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 60px;
   margin-left: 60px;
@@ -333,6 +333,7 @@ h6 {
   font-family: "Nunito", sans-serif;
   color: #899bbd;
   font-weight: 600;
+  background-color: #d6ebf2;
 }
 
 .breadcrumb a {
@@ -405,7 +406,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: #5ea0b6;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -617,6 +618,13 @@ h6 {
 .header-nav .profile .dropdown-item:hover {
   background-color: #f6f9ff;
 }
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+
+.btn-primary {
+  background-color: #000000;
+}
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -657,7 +665,7 @@ h6 {
 
   #main,
   #footer {
-    margin-left: 300px;
+    margin-left: 100px;
   }
 }
 
@@ -1266,3 +1274,31 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+body { margin: 0; }
+
+table { background-color: #fff; width: 100%; box-sizing: border-box; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1); /*border-collapse: collapse;*/ border-spacing: 0; }
+
+th, td { border: 1px solid rgba(255,255,255,0.1); box-sizing: border-box; }
+
+th { text-transform: uppercase; font-size:10px; font-weight:700; padding: 10px 0; letter-spacing: 1px; }
+
+td { width: 14.285%; transition: all 0.3s; font-size: 14px; font-weight: 400; font-size: 14px; padding: 1.5% 1.5% 5%; vertical-align: initial; padding: 1.5% 0 ; height: 75px; }
+
+.day:hover { cursor:pointer; }
+
+.today {  }
+
+span.number { margin-left: 10% }
+
+span.event { height: 4px; display: block; margin: 5px 10%; border-radius: 2px; background-color: #91c33b; }
+
+span.event-multiday { margin: 5px -2px; border-radius: 0; }
+span.event-multiday-start { margin-right: -4px;  }
+span.event-multiday-finish { margin-left: -4px;  }
+
+span.event-ghost { background-color:transparent; }
+

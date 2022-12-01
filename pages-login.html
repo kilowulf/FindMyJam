@@ -46,6 +46,70 @@
   </head>
 
   <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
+          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/fmj.png">
+        </a>
+      </div><!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="search"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+            onsearch="window.location.href='searchresults_not_logged_in.html';" method="POST" action="./searchresults_not_logged_in.html"
+          />
+          <button type="submit" title="Search" onclick="window.location.href='searchresults_not_logged_in.html';" >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle " href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li><!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number"></span>
+            </a><!-- End Notification Icon -->
+
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+              <li class="dropdown-header">
+                You have no new notifications
+              </li>
+            </ul><!-- End Notification Dropdown Items -->
+
+          </li><!-- End Notification Nav -->
+
+          
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary nav-item" onclick="window.location.href='pages-login.html';">Log In</button>
+          </li>
+
+        </ul>
+      </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
     <main>
       <div class="container">
         <section
@@ -56,16 +120,6 @@
               <div
                 class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center"
               >
-                <div class="d-flex justify-content-center py-4">
-                  <a
-                    href="index.html"
-                    class="logo d-flex align-items-center w-auto"
-                  >
-                    <img src="assets/img/logo.png" alt="" />
-                    <span class="d-none d-lg-block">FindMyJam</span>
-                  </a>
-                </div>
-                <!-- End Logo -->
 
                 <div class="card mb-3">
                   <div class="card-body">
@@ -131,11 +185,9 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <a href="index-logged.html"
-                          ><button class="btn btn-primary w-100">
-                            Login
-                          </button></a
-                        >
+                        <button class="btn btn-primary w-100" type="submit" onclick="window.location.href='users-profile.html';">
+                          Login
+                        </button>
                       </div>
                       <div class="col-12">
                         <p class="small mb-0">

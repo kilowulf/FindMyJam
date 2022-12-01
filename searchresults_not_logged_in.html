@@ -75,9 +75,9 @@
           name="query"
           placeholder="Search"
           title="Enter search keyword"
-          onsearch="window.location.href='searchresults.html';" method="POST" action="./searchresults.html"
+          onsearch="window.location.href='searchresults_not_logged_in.html';" method="POST" action="./searchresults_not_logged_in.html"
         />
-        <button type="submit" title="Search" onclick="window.location.href='searchresults.html';" >
+        <button type="submit" title="Search" onclick="window.location.href='searchresults_not_logged_in.html';" >
           <i class="bi bi-search"></i>
         </button>
       </form>
@@ -109,82 +109,9 @@
         </li><!-- End Notification Nav -->
 
          
-        <li class="nav-item dropdown pe-3">
-          <a
-            class="nav-link nav-profile d-flex align-items-center pe-0"
-            href="#"
-            data-bs-toggle="dropdown"
-          >
-            <img
-              src="assets/img/rocker_profile.jfif"
-              alt="Profile"
-              class="rounded-circle"
-            />
-            <span class="d-none d-md-block dropdown-toggle ps-2"
-              >K. Anderson</span
-            > </a
-          ><!-- End Profile Iamge Icon -->
-
-          <ul
-            class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
-          >
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Full Time Rocker</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li>
-              <a
-                class="dropdown-item d-flex align-items-center"
-                href="users-profile.html"
-              >
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li>
-              <a
-                class="dropdown-item d-flex align-items-center"
-                href="users-profile.html"
-              >
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li>
-              <a
-                class="dropdown-item d-flex align-items-center"
-                href="pages-faq.html"
-              >
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-          </ul>
-          <!-- End Profile Dropdown Items -->
+        <li class="nav-item">
+          <button type="button" class="btn btn-primary nav-item" onclick="window.location.href='pages-login.html';">Log In</button>
         </li>
-        <!-- End Profile Nav -->
 
       </ul>
     </nav><!-- End Icons Navigation -->
@@ -196,7 +123,7 @@
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active"><a href="searchresults.html">Search</a></li>
+        <li class="breadcrumb-item active"><a href="searchresults_not_logged_in.html">Search</a></li>
         
       </ol>
     </nav>
@@ -281,32 +208,32 @@
               </tr>
             </thead>
             <tbody>
-              <tr id="event" onclick="window.location.href='concertinfo.html'";>
-                <td><a href="concertinfo.html">Duran Duran</a></td>
+              <tr id="event" onclick="window.location.href='concertinfo_not_logged_in.html'";>
+                <td><a href="concertinfo_not_logged_in.html">Duran Duran</a></td>
                 <td>St. Louis, Mo.</td>
                 <td>$122.99</td>
                 <td>2023-05-25</td>
               </tr>
-              <tr id="event" onclick="window.location.href='concertinfo.html'";>
-                <td><a href="concertinfo.html">Megadeth</a></td>
+              <tr id="event" onclick="window.location.href='concertinfo_not_logged_in.html'";>
+                <td><a href="concertinfo_not_logged_in.html">Megadeth</a></td>
                 <td>Los Angeles, Ca.</td>
                 <td>$98.90</td>
                 <td>2023-12-05</td>
               </tr>
-              <tr id="event" onclick="window.location.href='concertinfo.html'";>
-                <td><a href="concertinfo.html">NOFX</a></td>
+              <tr id="event" onclick="window.location.href='concertinfo_not_logged_in.html'";>
+                <td><a href="concertinfo_not_logged_in.html">NOFX</a></td>
                 <td>Cottonwood, NJ.</td>
                 <td>$103.89</td>
                 <td>2023-08-12</td>
               </tr>
-              <tr id="event" onclick="window.location.href='concertinfo.html'";>
-                <td><a href="concertinfo.html">Slayer</a></td>
+              <tr id="event" onclick="window.location.href='concertinfo_not_logged_in.html'";>
+                <td><a href="concertinfo_not_logged_in.html">Slayer</a></td>
                 <td>Provo, Ut.</td>
                 <td>$79.32</td>
                 <td>2023-06-11</td>
               </tr>
-              <tr id="event" onclick="window.location.href='concertinfo.html'";>
-                <td><a href="concertinfo.html">The Cure</a></td>
+              <tr id="event" onclick="window.location.href='concertinfo_not_logged_in.html'";>
+                <td><a href="concertinfo_not_logged_in.html">The Cure</a></td>
                 <td>Odd, SC.</td>
                 <td>$98.94</td>
                 <td>2023-04-19</td>
@@ -331,7 +258,7 @@
               </tr>
               <tr>
                 <td class="day"><span class="number">31</span></td>
-                <td class="day"><span class="number">1</span><span id="event" class="event"><a href="concertinfo.html">Duran Duran</a></span></td>
+                <td class="day"><span class="number">1</span><span id="event" class="event"><a href="concertinfo_not_logged_in.html">Duran Duran</a></span></td>
                 <td class="day"><span class="number">2</span></td>
                 <td class="day"><span class="number">3</span></td>
                 <td class="day"></td>
@@ -350,8 +277,8 @@
               <tr>
                 <td class="day"><span class="number">14</span></td>
                 <td class="day"><span class="number">15</span></td>
-                <td class="day" onclick="window.location.href='concertinfo.html'";><span class="number">16</span><span id="event" class="event"><a href="concertinfo.html"><span>Megadeth</a></span></span></td>
-                <td class="day" onclick="window.location.href='concertinfo.html'";><span class="number">17</span><span class="event"><a href="concertinfo.html">Slayer</a></span></td>
+                <td class="day" onclick="window.location.href='concertinfo_not_logged_in.html'";><span class="number">16</span><span id="event" class="event"><a href="concertinfo_not_logged_in.html"><span>Megadeth</a></span></span></td>
+                <td class="day" onclick="window.location.href='concertinfo_not_logged_in.html'";><span class="number">17</span><span class="event"><a href="concertinfo_not_logged_in.html">Slayer</a></span></td>
                 <td class="day"><span class="number">18</span></td>
                 <td class="day"><span class="number">19</span></td>
                 <td class="day"><span class="number">20</span></td>
@@ -363,7 +290,7 @@
                 <td class="day"><span class="number">24</span></td>
                 <td class="day"><span class="number">25</span></td>
                 <td class="day"><span class="number">26</span></td>
-                <td class="day"><span class="number">27</span><span id="event" class="event" style="background-color:#da5f5f;"><a href="concertinfo.html">NOFX</a></span></td>
+                <td class="day"><span class="number">27</span><span id="event" class="event" style="background-color:#da5f5f;"><a href="concertinfo_not_logged_in.html">NOFX</a></span></td>
               </tr>
               <tr>
                 <td class="day"><span class="number">28</span></td>
@@ -376,7 +303,7 @@
               </tr>
               <tr>
                 <td class="day"><span class="number">5</span></td>
-                <td class="day"><span class="number">6</span><span id="event" class="event"><a href="concertinfo.html">The Cure</a></span></td>
+                <td class="day"><span class="number">6</span><span id="event" class="event"><a href="concertinfo_not_logged_in.html">The Cure</a></span></td>
                 <td class="day"><span class="number">7</span></td>
                 <td class="day"><span class="number">8</span></td>
                 <td class="day"><span class="number">9</span></td>
