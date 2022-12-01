@@ -1,267 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FindMyJam</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>FindMyJam</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Carousel -->
 
-  <!-- Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    ></script>
 
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>     
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: NiceAdmin - v2.4.1
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center"
+          style="scale: 120%; padding-left: 15px"
+        >
+          <img src="assets/img/logo.png" alt="" />
+          <img src="assets/img/fmj.png" />
+        </a>
+      </div>
+      <!-- End Logo -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
-        <img src="assets/img/logo.png" alt="">
-        <img src="assets/img/fmj.png">
-      </a>
-    </div><!-- End Logo -->
-
-    <div class="search-bar">
-      <form
-        class="search-form d-flex align-items-center"
-        method="POST"
-        action="#"
-      >
-        <input
-          type="search"
-          name="query"
-          placeholder="Search"
-          title="Enter search keyword"
-          onsearch="window.location.href='searchresults_not_logged_in.html';" method="POST" action="./searchresults_not_logged_in.html"
-        />
-        <button type="submit" title="Search" onclick="window.location.href='searchresults_not_logged_in.html';" >
-          <i class="bi bi-search"></i>
-        </button>
-      </form>
-    </div>
-    <!-- End Search Bar -->
-
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="search"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+            onsearch="window.location.href='searchresults_not_logged_in.html';"
+            method="POST"
+            action="./searchresults_not_logged_in.html"
+          />
+          <button
+            type="submit"
+            title="Search"
+            onclick="window.location.href='searchresults_not_logged_in.html';"
+          >
             <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
 
-        <li class="nav-item dropdown">
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
 
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number"></span>
-          </a><!-- End Notification Icon -->
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number"></span> </a
+            ><!-- End Notification Icon -->
 
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have no new notifications
-            </li>
-          </ul><!-- End Notification Dropdown Items -->
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">You have no new notifications</li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
 
-        </li><!-- End Notification Nav -->
+          <li class="nav-item">
+            <button
+              type="button"
+              class="btn btn-primary nav-item"
+              onclick="window.location.href='pages-login.html';"
+            >
+              Log In
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
 
-         
-        <li class="nav-item">
-          <button type="button" class="btn btn-primary nav-item" onclick="window.location.href='pages-login.html';">Log In</button>
-        </li>
-
-      </ul>
-    </nav><!-- End Icons Navigation -->
-
-  </header><!-- End Header -->
-
-  <main id="main" class="main mx-auto">
-
-    <section class="section dashboard">
-      <div class="row">
-
-        <!-- Main columns -->
-        <div class="col-lg-8 mx-auto">
-          
+    <main id="main" class="main mx-auto">
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Main columns -->
+          <div class="col-lg-8 mx-auto">
             <div class="row">
-                <img src="assets/img/fmj_homepage.png" class="center" style="vertical-align: middle; scale: 60%; margin-top: 20px;">
-  
-                <input type="search" class="form-control home-search col-lg-10" onsearch="window.location.href='searchresults_not_logged_in.html';" method="POST" action="./searchresults_not_logged_in.html" style="justify-content: center; scale: 120%;" placeholder="Find Concerts Now..." aria-label="Search">
-                
-                <a href="./searchresults_not_logged_in.html" style="margin-bottom: 30px;" class="text-center">...or Browse and Filter</a>
+              <img
+                src="assets/img/fmj_homepage.png"
+                class="center"
+                style="vertical-align: middle; scale: 60%; margin-top: 20px"
+              />
+
+              <input
+                type="search"
+                class="form-control home-search col-lg-10"
+                onsearch="window.location.href='searchresults_not_logged_in.html';"
+                method="POST"
+                action="./searchresults_not_logged_in.html"
+                style="justify-content: center; scale: 120%"
+                placeholder="Find Concerts Now..."
+                aria-label="Search"
+              />
+
+              <a
+                href="./searchresults_not_logged_in.html"
+                style="margin-bottom: 30px"
+                class="text-center"
+                >...or Browse and Filter</a
+              >
             </div>
 
             <section class="pt-5 pb-5">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6">
-                      <h3 class="mb-3">Recommended</h3>
-                    </div>
-                    <div class="col-6 text-right">
-                      <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
-                      </a>
-                      <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
-                      </a>
-                    </div>
-                    <div class="col-12">
-                      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-              
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="row">
-              
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert1.jpg">
-                                  </a>                                  
-                                </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="mb-3">Recommended</h3>
+                  </div>
+                  <div class="col-6 text-right">
+                    <a
+                      class="btn btn-primary mb-3 mr-1"
+                      href="#carouselExampleIndicators2"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a
+                      class="btn btn-primary mb-3"
+                      href="#carouselExampleIndicators2"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      id="carouselExampleIndicators2"
+                      class="carousel slide"
+                      data-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="row">
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert1.jpg"
+                                  />
+                                </a>
                               </div>
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert2.jpg">
-                                  </a>                                   
-                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert2.jpg"
+                                  />
+                                </a>
                               </div>
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert3.jpg">
-                                  </a>                                   
-                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert3.jpg"
+                                  />
+                                </a>
                               </div>
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert4.jpg">
-                                  </a>                                   
-                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert4.jpg"
+                                  />
+                                </a>
                               </div>
-                              
                             </div>
                           </div>
-                          
-                          
-                          <div class="carousel-item">
-                            <div class="row">
-              
-                                <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert1.jpg">
-                                  </a>                                   
-                                </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert1.jpg"
+                                  />
+                                </a>
                               </div>
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert2.jpg">
-                                  </a>                                   
-                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert2.jpg"
+                                  />
+                                </a>
                               </div>
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert3.jpg">
-                                  </a>                                   
-                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert3.jpg"
+                                  />
+                                </a>
                               </div>
-                              <div class="col-md-3 mb-3">
-                                <div class="card">
-                                  <a href="concertinfo_not_logged_in.html">
-                                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Concert4.jpg">
-                                  </a>                                   
-                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <div class="card">
+                                <a href="concertinfo_not_logged_in.html">
+                                  <img
+                                    class="img-fluid"
+                                    src="../project/assets/img/Concert4.jpg"
+                                  />
+                                </a>
                               </div>
-              
                             </div>
                           </div>
-                          
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-
-
+              </div>
+            </section>
+          </div>
         </div>
-        
-    
+      </section>
+    </main>
+    <!-- End #main -->
 
-        
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div>
+        <p><a href="about.html">About</a></p>
+        <p><a href="users-profile.html">My Account</a></p>
+        <p><a href="tables-data.html">My Uploads</a></p>
       </div>
-    </section>
+    </footer>
+    <!-- End Footer -->
 
-    
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </main><!-- End #main -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.min.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div>
-      <p><a href="about.html">About</a></p>
-      <p><a href="users-profile.html">My Account</a></p>
-      <p><a href="tables-data.html">My Uploads</a></p>
-
-
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.min.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
