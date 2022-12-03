@@ -313,13 +313,8 @@
       function(event) {
         if (form.checkValidity()) {
           form.classList.add("was-validated");
-          event.preventDefault();
-          // event.stopPropagation();
-        } else {
-          // form.classList.add("was-validated");
           // event.preventDefault();
-          // // event.stopPropagation();
-          // window.location = "https://findmyjam.netlify.app/index.html";
+        } else {
           false;
         }
       },
