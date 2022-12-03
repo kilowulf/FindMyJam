@@ -313,7 +313,7 @@
       function(event) {
         if (!form.checkValidity()) {
           //event.preventDefault();
-          // event.stopPropagation();
+          event.stopPropagation();
           false;
         } else {
           form.classList.add("was-validated");
