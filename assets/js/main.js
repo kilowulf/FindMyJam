@@ -319,7 +319,7 @@
           form.classList.add("was-validated");
           event.preventDefault();
           // event.stopPropagation();
-          window.location = "https://findmyjam.netlify.app/index.html";
+          //window.location = "https://findmyjam.netlify.app/index.html";
         }
       },
       false
