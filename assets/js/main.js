@@ -311,7 +311,7 @@
     form.addEventListener(
       "submit",
       function(event) {
-        if (form.checkValidity()) {
+        if (!form.checkValidity()) {
           form.classList.add("was-validated");
           //event.preventDefault();
         } else {
