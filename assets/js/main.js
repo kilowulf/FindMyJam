@@ -311,11 +311,11 @@
     form.addEventListener("submit", function(event) {
       if (!form.checkValidity()) {
         window.location = "https://findmyjam.netlify.app/index.html";
-        // event.preventDefault();
-        // event.stopPropagation();
       }
 
       form.classList.add("was-validated");
+      event.preventDefault();
+      event.stopPropagation();
       window.location = "https://findmyjam.netlify.app/index.html";
     });
   });
