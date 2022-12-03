@@ -314,12 +314,12 @@
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+        } else {
+          form.classList.add("was-validated");
+          event.preventDefault();
+          // event.stopPropagation();
+          window.location = "https://findmyjam.netlify.app/index.html";
         }
-
-        form.classList.add("was-validated");
-        event.preventDefault();
-        // event.stopPropagation();
-        window.location = "https://findmyjam.netlify.app/index.html";
       },
       false
     );
