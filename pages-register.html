@@ -48,13 +48,17 @@
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
-
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
-          <img src="assets/img/logo.png" alt="">
-          <img src="assets/img/fmj.png">
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center"
+          style="scale: 120%; padding-left: 15px"
+        >
+          <img src="assets/img/logo.png" alt="" />
+          <img src="assets/img/fmj.png" />
         </a>
-      </div><!-- End Logo -->
+      </div>
+      <!-- End Logo -->
 
       <div class="search-bar">
         <form
@@ -67,9 +71,15 @@
             name="query"
             placeholder="Search"
             title="Enter search keyword"
-            onsearch="window.location.href='searchresults_not_logged_in.html';" method="POST" action="./searchresults_not_logged_in.html"
+            onsearch="window.location.href='searchresults_not_logged_in.html';"
+            method="POST"
+            action="./searchresults_not_logged_in.html"
           />
-          <button type="button" title="Search" onclick="window.location.href='searchresults_not_logged_in.html';" >
+          <button
+            type="button"
+            title="Search"
+            onclick="window.location.href='searchresults_not_logged_in.html';"
+          >
             <i class="bi bi-search"></i>
           </button>
         </form>
@@ -78,21 +88,28 @@
 
       <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
-
           <li class="nav-item d-block d-lg-none">
-            <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
               <i class="bi bi-search"></i>
             </a>
-          </li><!-- End Search Icon-->
-          
+          </li>
+          <!-- End Search Icon-->
+
           <li class="nav-item">
-            <button type="button" class="btn btn-primary nav-item" onclick="window.location.href='pages-login.html';">Log In</button>
-          </li><!--End Login button icon-->
-
+            <button
+              type="button"
+              class="btn btn-primary nav-item"
+              onclick="window.location.href='pages-login.html';"
+            >
+              Log In
+            </button>
+          </li>
+          <!--End Login button icon-->
         </ul>
-      </nav><!-- End Icons Navigation -->
-
-    </header><!-- End Header -->
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
     <main>
       <div class="container">
         <section
@@ -103,7 +120,6 @@
               <div
                 class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center"
               >
-
                 <div class="card mb-3">
                   <div class="card-body">
                     <div class="pt-4 pb-2">
@@ -115,7 +131,8 @@
                       </p>
                     </div>
 
-                    <form class="row g-3 needs-validation" novalidate>
+                    <form class="row g-3 needs-validation">
+                      <!--novalidate-->
                       <div class="col-12">
                         <label for="yourName" class="form-label"
                           >Your Name</label
@@ -205,7 +222,11 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <button class="btn btn-primary w-100" type="submit" onclick="window.location.href='users-profile.html';">
+                        <button
+                          class="btn btn-primary w-100"
+                          type="submit"
+                          onclick="window.location.href='users-profile.html';"
+                        >
                           Create Account
                         </button>
                       </div>
