@@ -308,16 +308,20 @@
   var needsValidation = document.querySelectorAll(".needs-validation");
 
   Array.prototype.slice.call(needsValidation).forEach(function(form) {
-    form.addEventListener("submit", function(event) {
-      if (!form.checkValidity()) {
-        window.location = "https://findmyjam.netlify.app/index.html";
-      }
+    form.addEventListener(
+      "submit",
+      function(event) {
+        if (!form.checkValidity()) {
+          false;
+        }
 
-      form.classList.add("was-validated");
-      event.preventDefault();
-      event.stopPropagation();
-      window.location = "https://findmyjam.netlify.app/index.html";
-    });
+        form.classList.add("was-validated");
+        event.preventDefault();
+        event.stopPropagation();
+        window.location = "https://findmyjam.netlify.app/index.html";
+      },
+      false
+    );
   });
 
   /**
