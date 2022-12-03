@@ -312,8 +312,9 @@
       "submit",
       function(event) {
         if (!form.checkValidity()) {
-          event.preventDefault();
+          //event.preventDefault();
           // event.stopPropagation();
+          true;
         } else {
           form.classList.add("was-validated");
           event.preventDefault();
