@@ -317,9 +317,9 @@
         }
 
         form.classList.add("was-validated");
-        window.location = "pages-login.html";
+        window.location = "https://findmyjam.netlify.app/index.html";
       },
-      true
+      false
     );
   });
 
