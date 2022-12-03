@@ -314,7 +314,7 @@
         if (!form.checkValidity()) {
           //event.preventDefault();
           // event.stopPropagation();
-          true;
+          false;
         } else {
           form.classList.add("was-validated");
           event.preventDefault();
