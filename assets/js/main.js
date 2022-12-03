@@ -315,8 +315,8 @@
         }
 
         form.classList.add("was-validated");
-        // event.preventDefault();
-        // event.stopPropagation();
+        event.preventDefault();
+        event.stopPropagation();
         window.location = "https://findmyjam.netlify.app/index.html";
       },
       false
