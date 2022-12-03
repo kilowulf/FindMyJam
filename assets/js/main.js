@@ -317,7 +317,7 @@
         }
 
         form.classList.add("was-validated");
-        window.location.href = "pages-login.html";
+        window.location("pages-login.html");
       },
       false
     );
