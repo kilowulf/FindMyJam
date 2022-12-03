@@ -313,6 +313,7 @@
       function(event) {
         if (!form.checkValidity()) {
           form.classList.add("was-validated");
+          false;
         }
 
         form.classList.add("was-validated");
