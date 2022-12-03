@@ -320,7 +320,7 @@
           // event.preventDefault();
           // // event.stopPropagation();
           // window.location = "https://findmyjam.netlify.app/index.html";
-          true;
+          false;
         }
       },
       false
