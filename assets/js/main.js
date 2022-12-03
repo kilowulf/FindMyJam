@@ -315,7 +315,7 @@
           form.classList.add("was-validated");
           //event.preventDefault();
         } else {
-          false;
+          true;
         }
       },
       false
