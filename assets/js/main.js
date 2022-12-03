@@ -312,6 +312,7 @@
       "submit",
       function(event) {
         if (!form.checkValidity()) {
+          event.stopPropagation();
         }
 
         form.classList.add("was-validated");
