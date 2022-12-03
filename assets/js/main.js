@@ -316,7 +316,7 @@
 
         form.classList.add("was-validated");
         event.preventDefault();
-        event.stopPropagation();
+        // event.stopPropagation();
         window.location = "https://findmyjam.netlify.app/index.html";
       },
       false
