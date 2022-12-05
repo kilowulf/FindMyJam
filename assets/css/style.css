@@ -16,6 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #d6ebf2;
   color: #444444;
+  background-image: url("../img/cool-concert-background-1.jpg");
 }
 
 a {
@@ -486,7 +487,7 @@ h6 {
   list-style: none;
 }
 
-.header-nav>ul {
+.header-nav > ul {
   margin: 0;
   padding: 0;
 }
@@ -627,15 +628,14 @@ h6 {
 }
 
 .btn-primary:hover {
-  background-color: #ADD8E6;
+  background-color: #add8e6;
   color: #000000;
 }
 
 .btn-primary:active {
-  background-color: #ADD8E6;
+  background-color: #add8e6;
   color: #000000;
 }
-
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -673,7 +673,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   #main,
   #footer {
     margin-left: 100px;
@@ -687,7 +686,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   .toggle-sidebar #main,
   .toggle-sidebar #footer {
     margin-left: 0;
@@ -926,7 +924,7 @@ h6 {
 }
 
 /* News & Updates */
-.dashboard .news .post-item+.post-item {
+.dashboard .news .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -1193,7 +1191,7 @@ h6 {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #4154f1;
   border: 0;
   padding: 10px 30px;
@@ -1202,7 +1200,7 @@ h6 {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -1289,27 +1287,74 @@ h6 {
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
-table { background-color: #fff; width: 100%; box-sizing: border-box; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1); /*border-collapse: collapse;*/ border-spacing: 0; }
+table {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1); /*border-collapse: collapse;*/
+  border-spacing: 0;
+}
 
-th, td { border: 1px solid rgba(255,255,255,0.1); box-sizing: border-box; }
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
 
-th { text-transform: uppercase; font-size:10px; font-weight:700; padding: 10px 0; letter-spacing: 1px; }
+th {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
 
-td { width: 14.285%; transition: all 0.3s; font-size: 14px; font-weight: 400; font-size: 14px; padding: 1.5% 1.5% 5%; vertical-align: initial; padding: 1.5% 0 ; height: 75px; }
+td {
+  width: 14.285%;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 1.5% 1.5% 5%;
+  vertical-align: initial;
+  padding: 1.5% 0;
+  height: 75px;
+}
 
-.day:hover { cursor:pointer; }
+.day:hover {
+  cursor: pointer;
+}
 
-.today {  }
+.today {
+}
 
-span.number { margin-left: 10% }
+span.number {
+  margin-left: 10%;
+}
 
-span.event { height: 4px; display: block; margin: 5px 10%; border-radius: 2px; background-color: #91c33b; }
+span.event {
+  height: 4px;
+  display: block;
+  margin: 5px 10%;
+  border-radius: 2px;
+  background-color: #91c33b;
+}
 
-span.event-multiday { margin: 5px -2px; border-radius: 0; }
-span.event-multiday-start { margin-right: -4px;  }
-span.event-multiday-finish { margin-left: -4px;  }
+span.event-multiday {
+  margin: 5px -2px;
+  border-radius: 0;
+}
+span.event-multiday-start {
+  margin-right: -4px;
+}
+span.event-multiday-finish {
+  margin-left: -4px;
+}
 
-span.event-ghost { background-color:transparent; }
-
+span.event-ghost {
+  background-color: transparent;
+}
