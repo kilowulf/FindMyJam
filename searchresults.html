@@ -258,10 +258,11 @@
         <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
+                      <form>
                         <div class="search-bar" style="margin-top: 10px">
                             <form class="search-form d-flex align-items-center" method="POST" action="#">
                               <div class="col-sm-10">
-                                <input class = "form-control" type="search" name="query" placeholder="Search" title="Enter search keyword" onsearch="window.location.href='searchresults.html';">
+                                <input class = "form-control" type="search" name="query" placeholder="Search" title="Enter search keyword" onsearch="window.location.href='searchresults_not_logged_in.html';">
                               </div>
                             </form>
                         </div><!-- End Search Bar -->
@@ -278,29 +279,41 @@
                          <!--<div role="calendar" type="month" class="gj-picker gj-picker-bootstrap datepicker gj-unselectable" guid="fba66e0d-a6aa-85fe-efd7-b0e49f5bbd7b" month="10" year="2022" style=""><div role="body"><div role="navigator"><div><i class="gj-icon chevron-left"></i></div><div role="period">November 2022</div><div><i class="gj-icon chevron-right"></i></div></div><table><thead><tr role="week-days"><th><div>S</div></th><th><div>M</div></th><th><div>T</div></th><th><div>W</div></th><th><div>T</div></th><th><div>F</div></th><th><div>S</div></th></tr></thead><tbody><tr><td class="other-month gj-cursor-pointer" day="30" month="9" year="2022"><div>30</div></td><td class="other-month gj-cursor-pointer" day="31" month="9" year="2022"><div>31</div></td><td day="1" month="10" year="2022" class="current-month gj-cursor-pointer"><div>1</div></td><td day="2" month="10" year="2022" class="current-month gj-cursor-pointer"><div>2</div></td><td day="3" month="10" year="2022" class="current-month gj-cursor-pointer"><div>3</div></td><td day="4" month="10" year="2022" class="current-month gj-cursor-pointer"><div>4</div></td><td day="5" month="10" year="2022" class="current-month gj-cursor-pointer"><div>5</div></td></tr><tr><td day="6" month="10" year="2022" class="current-month gj-cursor-pointer"><div>6</div></td><td day="7" month="10" year="2022" class="current-month gj-cursor-pointer"><div>7</div></td><td day="8" month="10" year="2022" class="current-month gj-cursor-pointer"><div>8</div></td><td day="9" month="10" year="2022" class="current-month gj-cursor-pointer"><div>9</div></td><td day="10" month="10" year="2022" class="current-month gj-cursor-pointer"><div>10</div></td><td day="11" month="10" year="2022" class="current-month gj-cursor-pointer"><div>11</div></td><td day="12" month="10" year="2022" class="current-month gj-cursor-pointer"><div>12</div></td></tr><tr><td day="13" month="10" year="2022" class="current-month gj-cursor-pointer"><div>13</div></td><td day="14" month="10" year="2022" class="current-month gj-cursor-pointer"><div>14</div></td><td day="15" month="10" year="2022" class="current-month gj-cursor-pointer"><div>15</div></td><td day="16" month="10" year="2022" class="current-month gj-cursor-pointer"><div>16</div></td><td day="17" month="10" year="2022" class="today gj-cursor-pointer"><div>17</div></td><td day="18" month="10" year="2022" class="current-month gj-cursor-pointer"><div>18</div></td><td day="19" month="10" year="2022" class="current-month gj-cursor-pointer"><div>19</div></td></tr><tr><td day="20" month="10" year="2022" class="current-month gj-cursor-pointer"><div>20</div></td><td day="21" month="10" year="2022" class="current-month gj-cursor-pointer"><div>21</div></td><td day="22" month="10" year="2022" class="current-month gj-cursor-pointer"><div>22</div></td><td day="23" month="10" year="2022" class="current-month gj-cursor-pointer"><div>23</div></td><td day="24" month="10" year="2022" class="current-month gj-cursor-pointer"><div>24</div></td><td day="25" month="10" year="2022" class="current-month gj-cursor-pointer"><div>25</div></td><td day="26" month="10" year="2022" class="current-month gj-cursor-pointer"><div>26</div></td></tr><tr><td day="27" month="10" year="2022" class="current-month gj-cursor-pointer"><div>27</div></td><td day="28" month="10" year="2022" class="current-month gj-cursor-pointer"><div>28</div></td><td day="29" month="10" year="2022" class="current-month gj-cursor-pointer"><div>29</div></td><td day="30" month="10" year="2022" class="current-month gj-cursor-pointer"><div>30</div></td><td class="other-month gj-cursor-pointer" day="1" month="11" year="2022"><div>1</div></td><td class="other-month gj-cursor-pointer" day="2" month="11" year="2022"><div>2</div></td><td class="other-month gj-cursor-pointer" day="3" month="11" year="2022"><div>3</div></td></tr></tbody></table></div></div>
                          -->
 
-                        <label for="inputText" class="col-sm-4 col-form-label">Genre</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                        </div>
+                         <label for="inputText" class="col-sm-4 col-form-label">Genre</label>
+                         <div class="col-sm-10">
+                           <select class="form-select" id="genreform" aria-label="Default select example">
+                             <option selected="">Genre</option>
+                             <option>Rock</option>
+                             <option>Alternative</option>
+                             <option>Indie</option>
+                             <option>Pop</option>
+                             <option>Latin</option>
+                             <option>Hip Hop</option>
+                             <option>Country</option>
+                             <option>Dance</option>
+                             <option>Metal</option>
+                             <option>Jazz</option>
+                             <option>Classical</option>
+                           </select> 
+                         </div>
                         <label for="inputText" class="col-sm-4 col-form-label">Artist</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control">
+                            <input type="text" id="artistform" class="form-control">
                         </div>
                         <label for="inputText" class="col-sm-4 col-form-label">Location</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control">
+                            <input type="text" id="locationform" class="form-control">
                         </div>
 
-
-
                         <div class="text-center" style="padding-top: 10px;">
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" onclick="resetform()" class="btn btn-primary">
                               Reset
                             </button>
                             <button type="submit" class="btn btn-primary">
                               Submit
                             </button>
                           </div>
+                      </form>
 
                     </div>
                 </div>
@@ -324,7 +337,8 @@
           <table class="table" id="listview">
             <thead>
               <tr>
-                <th scope="col">Artist Name</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Genre</th>
                 <th scope="col">Location</th>
                 <th scope="col">Price</th>
                 <th scope="col">Date</th>
@@ -333,33 +347,66 @@
             <tbody>
               <tr id="event" onclick="window.location.href='concertinfo.html'";>
                 <td><a href="concertinfo.html">Duran Duran</a></td>
+                <td>Rock</td>
                 <td>St. Louis, Mo.</td>
                 <td>$122.99</td>
                 <td>2023-05-25</td>
               </tr>
               <tr id="event" onclick="window.location.href='concertinfo.html'";>
                 <td><a href="concertinfo.html">Megadeth</a></td>
+                <td>Metal</td>
                 <td>Los Angeles, Ca.</td>
                 <td>$98.90</td>
                 <td>2023-12-05</td>
               </tr>
               <tr id="event" onclick="window.location.href='concertinfo.html'";>
                 <td><a href="concertinfo.html">NOFX</a></td>
+                <td>Alternative</td>
                 <td>Cottonwood, NJ.</td>
                 <td>$103.89</td>
                 <td>2023-08-12</td>
               </tr>
               <tr id="event" onclick="window.location.href='concertinfo.html'";>
                 <td><a href="concertinfo.html">Slayer</a></td>
+                <td>Metal</td>
                 <td>Provo, Ut.</td>
                 <td>$79.32</td>
                 <td>2023-06-11</td>
               </tr>
               <tr id="event" onclick="window.location.href='concertinfo.html'";>
                 <td><a href="concertinfo.html">The Cure</a></td>
+                <td>Rock</td>
                 <td>Odd, SC.</td>
                 <td>$98.94</td>
                 <td>2023-04-19</td>
+              </tr>
+              <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                <td><a href="concertinfo.html">Lorna Shore</a></td>
+                <td>Metal</td>
+                <td>Denver, CO.</td>
+                <td>$25.02</td>
+                <td>2023-03-11</td>
+              </tr>              
+              <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                <td><a href="concertinfo.html">Youngboy NBA</a></td>
+                <td>Hip Hop</td>
+                <td>Birmingham, AL.</td>
+                <td>$68.99</td>
+                <td>2022-12-31</td>
+              </tr>              
+              <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                <td><a href="concertinfo.html">Avril Lavinge</a></td>
+                <td>Pop</td>
+                <td>Memphis, TN.</td>
+                <td>$158.62</td>
+                <td>2023-02-31</td>
+              </tr>
+              <tr id="event" onclick="window.location.href='concertinfo.html'";>
+                <td><a href="concertinfo.html">Chief Keef</a></td>
+                <td>Hip Hop</td>
+                <td>Chicago, IL.</td>
+                <td>$59.89</td>
+                <td>2023-07-08</td>
               </tr>
             </tbody>
           </table>
@@ -367,7 +414,6 @@
 
 
           <div id="calendarview" style="display: none;">
-            <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
 
             <table>
               <tr>
@@ -384,8 +430,8 @@
                 <td class="day"><span class="number">1</span><span id="event" class="event"><a href="concertinfo.html">Duran Duran</a></span></td>
                 <td class="day"><span class="number">2</span></td>
                 <td class="day"><span class="number">3</span></td>
-                <td class="day"></td>
-                <td class="day"></td>
+                <td class="day"><span class="number">4</span></td>
+                <td class="day"><span class="number">5</span></td>
                 <td class="day"><span class="number">6</span></td>
               </tr>
               <tr>
@@ -407,7 +453,7 @@
                 <td class="day"><span class="number">20</span></td>
               </tr>
               <tr>
-                <td class="day"><span class="number">21</span></td>
+                <td class="day"><span class="number">21</span><span id="event" class="event"><a href="concertinfo.html">The Cure</a></span></td>
                 <td class="day"><span class="number">22</span></td>
                 <td class="day"><span class="number">23</span></td>
                 <td class="day"><span class="number">24</span></td>
@@ -426,7 +472,7 @@
               </tr>
               <tr>
                 <td class="day"><span class="number">5</span></td>
-                <td class="day"><span class="number">6</span><span id="event" class="event"><a href="concertinfo.html">The Cure</a></span></td>
+                <td class="day"><span class="number">6</span></td>
                 <td class="day"><span class="number">7</span></td>
                 <td class="day"><span class="number">8</span></td>
                 <td class="day"><span class="number">9</span></td>
@@ -485,7 +531,17 @@ function showlist() {
   list.style.display = 'block';
 }
 
-//var events = getElementsById(event);
-
+function resetform() {
+  console.log("reset");
+  datepicker = document.getElementById("datepicker");
+  datepicker.value = "";
+  artistform = document.getElementById("artistform");
+  artistform.value = "";
+  locationform = document.getElementById("locationform");
+  locationform.value = "";
+  genreform = document.getElementById("genreform");
+  genreform.value = "";
+  
+}
 
 </script>

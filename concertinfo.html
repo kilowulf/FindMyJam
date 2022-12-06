@@ -248,7 +248,7 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item active"><a href="index_logged_in.html">Home</a></li>
         <li class="breadcrumb-item active"><a href="searchresults.html">Search</a></li>
-        <li class="breadcrumb-item active"><a href="concertinfo.html">Results</a></li>
+        <li class="breadcrumb-item active"><a href="concertinfo.html">Concert Info</a></li>
         
       </ol>
     </nav>
@@ -257,48 +257,50 @@
         <!-- Main columns -->
         <div class="container">
         <div class="row">
+<<<<<<< HEAD
+
+          <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body" style="padding: 0;">
+                    <img class="img-fluid" alt="100%x280" src="../project/assets/img/Duran_Duran.jpg">
+=======
         <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body" style="padding: 0;">
                         <img class="img-fluid" alt="100%x280" src="assets/img/Duran_Duran.jpg">
                     </div>
+>>>>>>> 881d54d664e64d9e322aca48ec7341a81e137492
                 </div>
+            </div>
+          </div>
 
+          <div class="col-lg-8">
+
+            <!-- Default Table -->
+            <table class="table" style="width: 400px; background-color: #fff; box-sizing: border-box; font-size-adjust: 120%;">
+              <tbody class="concert-info-table">
+                  <tr>
+                      <td>Artist: </td>
+                      <td>Duran Duran</td>
+                  </tr>
+                  <tr>
+                      <td>Location: </td>
+                      <td>St. Louis, MO</td>
+                  </tr>
+                  <tr>
+                      <td>Price: </td>
+                      <td>$122.99</td>
+                  </tr>
+                  <tr>
+                      <td>Date: </td>
+                      <td>2023-05-25</td>
+                  </tr>
+              </tbody>
+            </table>
             
-
-        
-      </div>
-      <div class="col-lg-8">
-          <h5 class="card-title">
-            Results
-          </h5>
-
-          <!-- Default Table -->
-          <table class="table" style="width: 400px; background-color: #fff; box-sizing: border-box;">
-            <tbody>
-                <tr>
-                    <td>Artist: </td>
-                    <td>Duran Duran</td>
-                </tr>
-                <tr>
-                    <td>Location: </td>
-                    <td>St. Louis, MO</td>
-                </tr>
-                <tr>
-                    <td>Price: </td>
-                    <td>$122.99</td>
-                </tr>
-                <tr>
-                    <td>Date: </td>
-                    <td>2023-05-25</td>
-                </tr>
-            </tbody>
-            
-          </table>
-          
-
-          <button class="btn btn-primary" type="button">Find Tickets</button>
-      </div>
+            <button type="button" id="savebutton" class="btn btn-outline-primary" onclick="save()"><i class="bi bi-star me-1"></i>Save</button>
+            <button class="btn btn-primary" type="button">Find Tickets</button>
+          </div>
 
       <div class="col-lg-8">
       <section class="pt-5 pb-5">
@@ -428,3 +430,14 @@
 </body>
 
 </html>
+
+<script>
+
+function save() {
+  let savebtn = document.getElementById("savebutton");
+  //console.log("clicked save");
+  savebtn.class = 'btn-primary';
+  savebtn.style.backgroundcolor = '#ff0000';
+}
+
+</script>
