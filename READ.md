@@ -1,1 +1,0 @@
-# FindMyJam_netlify
