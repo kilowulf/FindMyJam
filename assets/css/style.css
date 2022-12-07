@@ -628,15 +628,27 @@ h6 {
 }
 
 .btn-primary:hover {
+<<<<<<< HEAD
   background-color: #add8e6;
+=======
+  background-color: #ADD8E6;
+>>>>>>> 7f934f00d464ff4cb560015ef3bdc621e1ef15a7
   color: #000000;
 }
 
 .btn-primary:active {
+<<<<<<< HEAD
   background-color: #add8e6;
   color: #000000;
 }
 
+=======
+  background-color: #ADD8E6;
+  color: #000000;
+}
+
+
+>>>>>>> 7f934f00d464ff4cb560015ef3bdc621e1ef15a7
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
@@ -1325,12 +1337,16 @@ td {
   height: 75px;
 }
 
+<<<<<<< HEAD
 .day:hover {
   cursor: pointer;
 }
 
 .today {
 }
+=======
+span.number { margin-left: 10% }
+>>>>>>> 7f934f00d464ff4cb560015ef3bdc621e1ef15a7
 
 span.number {
   margin-left: 10%;
@@ -1355,6 +1371,37 @@ span.event-multiday-finish {
   margin-left: -4px;
 }
 
+<<<<<<< HEAD
 span.event-ghost {
   background-color: transparent;
 }
+=======
+#listview th, tr, td {
+  padding: 12px;
+  font-size: 16px;
+}
+#calendarview th, tr, td {
+  padding: 15px;
+  
+}
+#calendarview span {
+  font-size: 20;
+}
+#calendarview table {
+  padding-bottom: 50px;
+  
+}
+.number {
+  font-size: 16px;
+}
+.day-name {
+  font-size: 16px;
+}
+.concert-info-table tr, td {
+  font-weight: 400;
+  font-size: 18px;
+}
+.concert-info-image {
+  vertical-align: center;
+}
+>>>>>>> 7f934f00d464ff4cb560015ef3bdc621e1ef15a7
