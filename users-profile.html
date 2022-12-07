@@ -9,7 +9,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
@@ -37,6 +37,15 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <!--Adding background image to homepage-->
+    <style>
+      body {
+        background-image: url("assets/img/cool-concert-background-1.jpg");
+        background-size: cover;
+        background-repeat: repeat-y;
+      }
+    </style>
+
     <!-- =======================================================
   * Template Name: NiceAdmin - v2.4.1
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -49,16 +58,11 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a
-          href="index_logged_in.html"
-          class="logo d-flex align-items-center"
-          style="scale: 120%; padding-left: 15px"
-        >
-          <img src="assets/img/logo.png" alt="" />
-          <img src="assets/img/fmj.png" />
+        <a href="index_logged_in.html" class="logo d-flex align-items-center" style="scale: 120%; padding-left: 15px;">
+          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/fmj.png">
         </a>
-      </div>
-      <!-- End Logo -->
+      </div><!-- End Logo -->
       <!-- End Logo -->
 
       <div class="search-bar">
@@ -72,15 +76,9 @@
             name="query"
             placeholder="Search"
             title="Enter search keyword"
-            onsearch="window.location.href='searchresults.html';"
-            method="POST"
-            action="./searchresults.html"
+            onsearch="window.location.href='searchresults.html';" method="POST" action="./searchresults.html"
           />
-          <button
-            type="button"
-            title="Search"
-            onclick="window.location.href='searchresults.html';"
-          >
+          <button type="button" title="Search" onclick="window.location.href='searchresults.html';" >
             <i class="bi bi-search"></i>
           </button>
         </form>
@@ -230,10 +228,7 @@
               </li>
 
               <li>
-                <a
-                  class="dropdown-item d-flex align-items-center"
-                  href="index.html"
-                >
+                <a class="dropdown-item d-flex align-items-center" href="index.html">
                   <i class="bi bi-box-arrow-right"></i>
                   <span>Sign Out</span>
                 </a>
@@ -248,14 +243,13 @@
     </header>
     <!-- End Header -->
 
+
     <main id="main" class="main mx-auto">
       <div class="pagetitle">
         <h1>Account</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index_logged_in.html">Home</a>
-            </li>
+            <li class="breadcrumb-item"><a href="index_logged_in.html">Home</a></li>
             <li class="breadcrumb-item">Users</li>
             <li class="breadcrumb-item active">Account</li>
           </ol>
@@ -348,6 +342,17 @@
                       Settings
                     </button>
                   </li>
+
+
+
+
+
+
+
+
+
+
+
                 </ul>
                 <div class="tab-content pt-2">
                   <div
@@ -386,9 +391,7 @@
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">
-                        Address (private)
-                      </div>
+                      <div class="col-lg-3 col-md-4 label">Address (private)</div>
                       <div class="col-lg-9 col-md-8">
                         A108 Adam Street, New York, NY 535022
                       </div>
@@ -470,8 +473,7 @@
                             class="form-control"
                             id="about"
                             style="height: 100px"
-                          >
-I'm a full-time rocker based in Salt Lake City, UT!
+                          >I'm a full-time rocker based in Salt Lake City, UT!
                           </textarea>
                         </div>
                       </div>
@@ -714,12 +716,14 @@ I'm a full-time rocker based in Salt Lake City, UT!
                     <form>
                       <div class="row mb-3">
                         <label
-                          for="currentPassword"
-                          class="col-md-4 col-lg-3 col-form-label"
+                        for="currentPassword"
+                        class="col-md-4 col-lg-3 col-form-label"
                         >
-                          Change Password
+                        Change Password
+
                         </label>
                         <div class="row mb-3">
+                          
                           <label
                             for="currentPassword"
                             class="col-md-4 col-lg-3 col-form-label"
@@ -775,12 +779,9 @@ I'm a full-time rocker based in Salt Lake City, UT!
                       </div>
                     </form>
                     <!-- End settings Form -->
-                  </div>
+                  </div>             
 
-                  <div
-                    class="tab-pane fade pt-3"
-                    id="profile-favorite-concerts"
-                  >
+                  <div class="tab-pane fade pt-3" id="profile-favorite-concerts">
                     <!-- Favorited Concerts display -->
                     <table class="table" id="listview">
                       <thead>
@@ -792,31 +793,19 @@ I'm a full-time rocker based in Salt Lake City, UT!
                         </tr>
                       </thead>
                       <tbody>
-                        <tr
-                          id="event"
-                          onclick="window.location.href='concertinfo.html'"
-                          ;
-                        >
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
                           <td><a href="concertinfo.html">Megadeth</a></td>
                           <td>Los Angeles, Ca.</td>
                           <td>$98.90</td>
                           <td>2023-12-05</td>
                         </tr>
-                        <tr
-                          id="event"
-                          onclick="window.location.href='concertinfo.html'"
-                          ;
-                        >
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
                           <td><a href="concertinfo.html">NOFX</a></td>
                           <td>Cottonwood, NJ.</td>
                           <td>$103.89</td>
                           <td>2023-08-12</td>
                         </tr>
-                        <tr
-                          id="event"
-                          onclick="window.location.href='concertinfo.html'"
-                          ;
-                        >
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
                           <td><a href="concertinfo.html">Slayer</a></td>
                           <td>Provo, Ut.</td>
                           <td>$79.32</td>
@@ -827,6 +816,7 @@ I'm a full-time rocker based in Salt Lake City, UT!
                     <!-- End Favorited Concerts display -->
                   </div>
 
+                                    
                   <div class="tab-pane fade pt-3" id="profile-concert-listings">
                     <!-- My Concert Listings display -->
                     <table class="table" id="listview">
@@ -839,21 +829,13 @@ I'm a full-time rocker based in Salt Lake City, UT!
                         </tr>
                       </thead>
                       <tbody>
-                        <tr
-                          id="event"
-                          onclick="window.location.href='concertinfo.html'"
-                          ;
-                        >
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
                           <td><a href="concertinfo.html">Kevin Anderson</a></td>
                           <td>Salt Lake City, Ut.</td>
                           <td>$49.99</td>
                           <td>2023-01-21</td>
                         </tr>
-                        <tr
-                          id="event"
-                          onclick="window.location.href='concertinfo.html'"
-                          ;
-                        >
+                        <tr id="event" onclick="window.location.href='concertinfo.html'";>
                           <td><a href="concertinfo.html">Kevin Anderson</a></td>
                           <td>Provo, Ut.</td>
                           <td>$49.99</td>
@@ -861,8 +843,16 @@ I'm a full-time rocker based in Salt Lake City, UT!
                         </tr>
                       </tbody>
                     </table>
+
+                    <div>
+                      <button type="submit" class="btn btn-primary" onclick="window.location.href='uploadconcert.html';">
+                        Create Concert Listing
+                      </button>
+                    </div>
+
                     <!-- End Concert Listings display -->
                   </div>
+
                 </div>
                 <!-- End Bordered Tabs -->
               </div>
